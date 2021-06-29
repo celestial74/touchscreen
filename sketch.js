@@ -19,7 +19,16 @@ function draw() {
             alert(err);
         }
         finally{
-            go();
+            //go();
+            if(touches[0].x<100) {
+                alert("Great! ◉‿◉");   
+            }
+            else if(touches[0].x==100) {
+                alert("Great... (•‿•)");
+            }
+            else {
+                alert("Not Great ⊙﹏⊙");     
+            }
         }
         
     }
