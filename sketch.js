@@ -13,7 +13,7 @@ function setup() {
 function draw() {
        if(touches.length>0) {
         try{
-            alert(touches[0] + " :x");
+            alert(touches[0].x + " :x");
         }
         catch(err){
             alert(err);
