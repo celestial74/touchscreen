@@ -11,7 +11,8 @@ function setup() {
     imgbut.mouseClicked(go);
 }
 function draw() {
-    try{
+       if(touches.length>0) {
+        try{
             alert(touches[0] + " :x");
         }
         catch(err){
@@ -20,6 +21,8 @@ function draw() {
         finally{
             go();
         }
+        
+    }
 }
 function go() {
     window.location.replace("https://www.google.com");
