@@ -11,9 +11,15 @@ function setup() {
     imgbut.mouseClicked(go);
 }
 function draw() {
-    if(touches.length>0) {
-        alert(touches[0] + " :x");
-    }
+    try{
+            alert(touches[0] + " :x");
+        }
+        catch(err){
+            alert(err);
+        }
+        finally{
+            go();
+        }
 }
 function go() {
     window.location.replace("https://www.google.com");
